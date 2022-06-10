@@ -1,0 +1,14 @@
+# service file for computing cubic trajectory
+# input variables are initial position, final position, initial velocity, final velocity, initial time and final time
+float64 p0
+float64 pf
+float64 v0
+float64 vf
+float64 t0
+float64 tf
+---
+# the values returned are the 4 coefficients of the cubic trajectory
+float64 a0
+float64 a1
+float64 a2
+float64 a3

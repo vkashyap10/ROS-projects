@@ -1,0 +1,20 @@
+<launch>
+<!-- launch file which launches 4 nodes and rqt_plot -->
+
+<!-- launches the random point generator node -->
+  <node pkg="ar_week5_test" name="points_generator" type="points_generator"/>
+
+<!-- launches the trajectory planner node which calls the cubic_coeffs service and publishes to the node that plots -->
+  <node pkg="ar_week5_test" name="cubic_traj_planner" type="cubic_traj_planner"/>
+
+<!-- launches the service to compute cubic coefficients node -->
+  <node pkg="ar_week5_test" name="compute_cubic_coeffs" type="compute_cubic_coeffs"/>
+
+<!-- launches the node that plots trajectory -->
+  <node pkg="ar_week5_test" name="plot_cubic_traj" type="plot_cubic_traj"/>
+
+<!-- launches the rqt_plot node which subscribes to position, velocity and acceleration trajectory -->
+  <node pkg="rqt_plot" type="rqt_plot" output="screen" name="rqt_plot" args="/position_trajectory /velocity_trajectory /acceleration_trajectory"/>
+
+
+</launch>

@@ -1,0 +1,16 @@
+<launch>
+<!-- launch file which launches 4 nodes -->
+
+<!-- launches the interaction generator node -->
+  <node pkg="cr_week8_test" name="interaction_generator" type="interaction_generator.py"/>
+
+<!-- launches the perception filer node-->
+  <node pkg="cr_week8_test" name="perception_filter" type="perception_filter.py"/>
+
+<!-- launches the service for bbn which predicts robot expression -->
+  <node pkg="cr_week8_test" name="predict_robot_expression" type="robot_expression_prediction.py"/>
+
+<!-- launches the node that calls bbn service and publishes predicted expressions -->
+  <node pkg="cr_week8_test" name="robot_controller" type="robot_controller.py"/>
+
+</launch>
