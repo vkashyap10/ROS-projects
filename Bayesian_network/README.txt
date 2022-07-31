@@ -13,13 +13,3 @@ To run the package:
 6) To visualise the topic, open a new tab in terminal and source as done in step 4.Command: rqt_graph
 
 -----------------------------------------------------------------------------------------------------
-
-Dear Lorenzo,
-
-Hope you are having a good day. 
-My rgate got stuck last night and isn't responding since then. I have informed the IT services about it. Fortunately, I had completed my assignment before the screen froze. I have manually downloaded individual files for my ros program using the side panel and arranged them in the file structure ros requires. 
-
-I wanted to let you know about this in case my program errors out due to some silly error that I might have made while manually downloading and arranging the files. Hopefully, in case of such an error, you would take my situation into consideration and not impose a heavy penalty.
-
-Thank you,
-Vishal
